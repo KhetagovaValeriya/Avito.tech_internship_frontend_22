@@ -27,26 +27,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  background-color: #fff;
-  font-family: inherit;
-  font-size: 0.75rem;
-  outline: none;
-  padding: 0.5rem 0.8rem;
-  border: 0.1rem solid #616464;
-  border-radius: 0.625rem;
-  transition: all 0.15s ease-in-out;
-  margin: 0 auto;
-  display: block;
-    
-}
-
-button:hover {
-  background-color: transparent;
-  color:#616464;
-  cursor: pointer;
-}
-
 .loading {
   width: 4rem;
   height: 4rem;
@@ -69,6 +49,7 @@ button:hover {
   }
 }
 
+
 .section {
   padding: 1.25rem;
 }
@@ -80,6 +61,20 @@ button:hover {
   text-align: center;
   margin-bottom: 1rem;
 }
+
+.section .title a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7b7e7e;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.section .title a:hover {
+  color: #616464;
+}
+
 
 .section .cards {
   display: grid;  
@@ -123,18 +118,32 @@ button:hover {
   color: #616464;
 }
 
-
-@media (min-width: 700px) {
-  .section .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
+button {
+  background-color: #fff;
+  font-family: inherit;
+  font-size: 0.75rem;
+  outline: none;
+  padding: 0.5rem 0.8rem;
+  border: 0.1rem solid #616464;
+  border-radius: 0.625rem;
+  transition: all 0.15s ease-in-out;
+  margin: 0 auto;
+  display: block;
+  margin-top: 2rem; 
 }
 
+button:hover {
+  background-color: transparent;
+  color:#616464;
+  cursor: pointer;
+}
+
+
+
+
+
 @media (min-width: 1024px) {
-  form{
-    display: flex;
-    align-items: center;
-  }
+  
 
   .section {
     max-width: 992px;
